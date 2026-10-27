@@ -10,7 +10,7 @@
 	"contact": {
 		"homepage": "https://avie.cc",
 		"sources": "https://github.com/avie293/tabby-zoom",
-		"issues": "https://github.com/avie293/avie-issues"
+		"issues": "https://github.com/avie293/avie-issues/issues"
 	},
 	"license": "Avie Terms & Conditions 1.0",
 	"icon": "assets/tabby-zoom/icon.png",
