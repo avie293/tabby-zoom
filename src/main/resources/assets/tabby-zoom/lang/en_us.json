@@ -1,0 +1,42 @@
+{
+	"key.category.tabby-zoom.main": "Tabby Zoom",
+	"key.tabby-zoom.zoom": "Zoom",
+	"key.tabby-zoom.cinematicZoom": "Cinematic Zoom",
+
+	"config.tabby-zoom.category.general": "General",
+	"config.tabby-zoom.zoomKey": "Zoom Key",
+	"config.tabby-zoom.initialZoom": "Zoom Level",
+	"config.tabby-zoom.initialZoom.tooltip": "How far you zoom in when pressing the zoom key.",
+	"config.tabby-zoom.cinematicCamera": "Cinematic Camera",
+	"config.tabby-zoom.cinematicCamera.tooltip": "Smooths the camera movement while zooming, like OptiFine.",
+	"config.tabby-zoom.relativeSensitivity": "Relative Sensitivity",
+	"config.tabby-zoom.relativeSensitivity.tooltip": "Lowers the mouse sensitivity the further you zoom in.",
+
+	"config.tabby-zoom.group.cinematicZoom": "Cinematic Zoom",
+	"config.tabby-zoom.cinematicZoomKey": "Cinematic Zoom Key",
+	"config.tabby-zoom.cinematicZoomKey.tooltip": "Zooms with cinematic camera and bars, no matter what is set above.",
+	"config.tabby-zoom.cinematicZoomHideHud": "Hide HUD",
+	"config.tabby-zoom.cinematicZoomHideHud.tooltip": "Hides the HUD and hand like F1 while the cinematic zoom is held.",
+
+	"config.tabby-zoom.group.cinematicBars": "Cinematic Bars",
+	"config.tabby-zoom.cinematicBars": "Cinematic Bars",
+	"config.tabby-zoom.cinematicBars.tooltip": "Shows black bars at the top and bottom while zooming. Needs Cinematic Camera.",
+	"config.tabby-zoom.cinematicBarSize": "Bar Size",
+	"config.tabby-zoom.cinematicBarSize.tooltip": "Height of each bar in percent of the screen height.",
+	"config.tabby-zoom.cinematicBarFade": "Fade Duration",
+	"config.tabby-zoom.cinematicBarFade.tooltip": "How long the bars take to fade in and out.",
+
+	"config.tabby-zoom.group.smoothZoom": "Smooth Zoom",
+	"config.tabby-zoom.smoothZoom": "Smooth Zoom",
+	"config.tabby-zoom.smoothZoom.tooltip": "Animates zooming in and out instead of jumping instantly.",
+	"config.tabby-zoom.zoomSpeed": "Zoom Speed",
+	"config.tabby-zoom.zoomSpeed.tooltip": "How fast the smooth zoom animation is.",
+
+	"config.tabby-zoom.group.scrollZoom": "Scroll Zoom",
+	"config.tabby-zoom.scrollZoom": "Scroll to Zoom",
+	"config.tabby-zoom.scrollZoom.tooltip": "Use the mouse wheel while zooming to zoom further in or out.",
+	"config.tabby-zoom.scrollStep": "Scroll Step",
+	"config.tabby-zoom.scrollStep.tooltip": "How much one scroll step multiplies the zoom.",
+	"config.tabby-zoom.maxZoom": "Max Zoom",
+	"config.tabby-zoom.maxZoom.tooltip": "How far you can zoom in by scrolling."
+}

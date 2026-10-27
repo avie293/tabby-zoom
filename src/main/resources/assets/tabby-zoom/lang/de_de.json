@@ -1,0 +1,42 @@
+{
+	"key.category.tabby-zoom.main": "Tabby Zoom",
+	"key.tabby-zoom.zoom": "Zoomen",
+	"key.tabby-zoom.cinematicZoom": "Kino-Zoom",
+
+	"config.tabby-zoom.category.general": "Allgemein",
+	"config.tabby-zoom.zoomKey": "Zoom-Taste",
+	"config.tabby-zoom.initialZoom": "Zoomstufe",
+	"config.tabby-zoom.initialZoom.tooltip": "Wie weit beim Drücken der Zoom-Taste reingezoomt wird.",
+	"config.tabby-zoom.cinematicCamera": "Kinokamera",
+	"config.tabby-zoom.cinematicCamera.tooltip": "Glättet die Kamerabewegung beim Zoomen, wie bei OptiFine.",
+	"config.tabby-zoom.relativeSensitivity": "Relative Empfindlichkeit",
+	"config.tabby-zoom.relativeSensitivity.tooltip": "Senkt die Mausempfindlichkeit, je weiter du reinzoomst.",
+
+	"config.tabby-zoom.group.cinematicZoom": "Kino-Zoom",
+	"config.tabby-zoom.cinematicZoomKey": "Kino-Zoom-Taste",
+	"config.tabby-zoom.cinematicZoomKey.tooltip": "Zoomt mit Kinokamera und Kinobalken, egal was oben eingestellt ist.",
+	"config.tabby-zoom.cinematicZoomHideHud": "HUD ausblenden",
+	"config.tabby-zoom.cinematicZoomHideHud.tooltip": "Blendet HUD und Hand wie mit F1 aus, solange der Kino-Zoom gehalten wird.",
+
+	"config.tabby-zoom.group.cinematicBars": "Kinobalken",
+	"config.tabby-zoom.cinematicBars": "Kinobalken",
+	"config.tabby-zoom.cinematicBars.tooltip": "Zeigt beim Zoomen schwarze Balken oben und unten. Benötigt die Kinokamera.",
+	"config.tabby-zoom.cinematicBarSize": "Balkengröße",
+	"config.tabby-zoom.cinematicBarSize.tooltip": "Höhe jedes Balkens in Prozent der Bildschirmhöhe.",
+	"config.tabby-zoom.cinematicBarFade": "Einblenddauer",
+	"config.tabby-zoom.cinematicBarFade.tooltip": "Wie lange die Balken zum Ein- und Ausblenden brauchen.",
+
+	"config.tabby-zoom.group.smoothZoom": "Weiches Zoomen",
+	"config.tabby-zoom.smoothZoom": "Weiches Zoomen",
+	"config.tabby-zoom.smoothZoom.tooltip": "Animiert das Rein- und Rauszoomen, statt sofort zu springen.",
+	"config.tabby-zoom.zoomSpeed": "Zoomgeschwindigkeit",
+	"config.tabby-zoom.zoomSpeed.tooltip": "Wie schnell die Zoom-Animation ist.",
+
+	"config.tabby-zoom.group.scrollZoom": "Scroll-Zoom",
+	"config.tabby-zoom.scrollZoom": "Mit Mausrad zoomen",
+	"config.tabby-zoom.scrollZoom.tooltip": "Beim Zoomen mit dem Mausrad weiter rein- oder rauszoomen.",
+	"config.tabby-zoom.scrollStep": "Scroll-Schritt",
+	"config.tabby-zoom.scrollStep.tooltip": "Um wie viel ein Scroll-Schritt den Zoom vervielfacht.",
+	"config.tabby-zoom.maxZoom": "Maximaler Zoom",
+	"config.tabby-zoom.maxZoom.tooltip": "Wie weit du per Mausrad maximal reinzoomen kannst."
+}

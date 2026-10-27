@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "tabby-zoom",
+	"version": "${version}",
+	"name": "Tabby Zoom",
+	"description": "Hold C to zoom",
+	"authors": [
+		"Avie"
+	],
+	"contact": {
+		"homepage": "https://avie.cc",
+		"sources": "https://github.com/avie293/tabby-zoom",
+		"issues": "https://github.com/avie293/avie-issues"
+	},
+	"license": "Avie Terms & Conditions 1.0",
+	"icon": "assets/tabby-zoom/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"cc.avie.tabbyzoom.client.TabbyZoomClient"
+		]
+	},
+	"mixins": [
+		"tabby-zoom.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*",
+		"tabbylib": ">=1.1.0"
+	}
+}
