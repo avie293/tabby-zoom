@@ -12,4 +12,4 @@ Tabby Zoom is client-side only and works on any server. Report bugs on [GitHub](
 
 ## License
 
-This mod is under the [Avie Terms & Conditions](https://raw.githubusercontent.com/avie293/.github/refs/heads/main/LICENSE).
+This mod is under the [Avie Terms & Conditions 1.0](https://raw.githubusercontent.com/avie293/.github/refs/heads/main/LICENSE).

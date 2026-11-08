@@ -17,7 +17,7 @@
 	"environment": "client",
 	"entrypoints": {
 		"client": [
-			"cc.avie.tabbyzoom.client.TabbyZoomClient"
+			"cc.avie.tabbyzoom.fabric.TabbyZoomFabric"
 		]
 	},
 	"mixins": [
@@ -28,6 +28,13 @@
 		"minecraft": "~26.3",
 		"java": ">=25",
 		"fabric-api": "*",
-		"tabbylib": ">=1.1.0"
+		"tabbylib": ">=${tabbylib_version}"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"avie29.discord": "https://discord.gg/57TZ8BJvd9"
+			}
+		}
 	}
 }

@@ -4,10 +4,18 @@ pluginManagement {
 			name = 'Fabric'
 			url = 'https://maven.fabricmc.net/'
 		}
+		maven {
+			name = 'NeoForged'
+			url = 'https://maven.neoforged.net/releases'
+		}
 		mavenCentral()
 		gradlePluginPortal()
 	}
 }
 
-// Should match your modid
 rootProject.name = 'tabby-zoom'
+
+// Code shared by all loaders, and one project per loader that builds the mod jar
+include 'common'
+include 'fabric'
+include 'neoforge'
