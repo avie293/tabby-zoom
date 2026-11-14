@@ -11,4 +11,6 @@ Tabby Zoom lets you zoom in just like with OptiFine and works straight away with
 
 All settings like zoom level, max zoom, animation speed and bar size can be changed under `Options → TabbyLib → Tabby Zoom`.
 
+Pre 2.0.0 versions: [Avies Archive](https://avie.cc/archive/)
+
 Bugs and crashes can be reported in the [issue tracker](https://github.com/avie293/avie-issues/issues) by selecting **Tabby Zoom** as the project.
