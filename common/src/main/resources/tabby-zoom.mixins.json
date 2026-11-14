@@ -1,5 +1,6 @@
 {
   "required": true,
+  "minVersion": "0.8",
   "package": "cc.avie.tabbyzoom.mixin",
   "compatibilityLevel": "JAVA_25",
   "client": [

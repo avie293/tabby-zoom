@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "id": "tabby-zoom",
+  "id": "${mod_id}",
   "version": "${version}",
-  "name": "Tabby Zoom",
-  "description": "Hold C to zoom",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
   "authors": [
-    "Avie"
+    "${mod_author}"
   ],
   "contact": {
-    "homepage": "https://avie.cc",
-    "sources": "https://github.com/avie293/tabby-zoom",
-    "issues": "https://github.com/avie293/avie-issues/issues"
+    "homepage": "${mod_homepage}",
+    "sources": "${mod_sources}",
+    "issues": "${mod_issues}"
   },
-  "license": "Avie Terms & Conditions 1.0",
-  "icon": "assets/tabby-zoom/icon.png",
+  "license": "${mod_license}",
+  "icon": "assets/${mod_id}/icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [
@@ -24,11 +24,11 @@
     "tabby-zoom.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.20.1",
-    "minecraft": "~26.3",
-    "java": ">=25",
     "fabric-api": "*",
-    "tabbylib": ">=${tabbylib_version}"
+    "tabbylib": ">=${tabbylib_version}",
+    "fabricloader": ">=${fabric_loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=${java_version}"
   },
   "custom": {
     "modmenu": {
