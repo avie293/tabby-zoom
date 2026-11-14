@@ -6,7 +6,10 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
 import net.minecraft.client.KeyMapping;
 
-public class TabbyZoomFabric implements ClientModInitializer {
+/**
+ * Fabric client entrypoint of Tabby Zoom.
+ */
+public final class TabbyZoomFabricClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         KeyMapping.Category.register(TabbyZoomClient.CATEGORY.id());
