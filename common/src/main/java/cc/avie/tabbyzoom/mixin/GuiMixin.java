@@ -9,12 +9,12 @@ import org.spongepowered.asm.mixin.injection.At;
 
 @Mixin(Gui.class)
 public class GuiMixin {
-	@ModifyExpressionValue(
-			method = "extractRenderState",
-			at = @At(value = "NEW", target = "Lnet/minecraft/client/gui/GuiGraphicsExtractor;")
-	)
-	private GuiGraphicsExtractor tabbyZoom$renderCinematicBars(GuiGraphicsExtractor graphics) {
-		CinematicBars.render(graphics);
-		return graphics;
-	}
+    @ModifyExpressionValue(
+            method = "extractRenderState",
+            at = @At(value = "NEW", target = "Lnet/minecraft/client/gui/GuiGraphicsExtractor;")
+    )
+    private GuiGraphicsExtractor tabbyZoom$renderCinematicBars(GuiGraphicsExtractor graphics) {
+        CinematicBars.render(graphics);
+        return graphics;
+    }
 }

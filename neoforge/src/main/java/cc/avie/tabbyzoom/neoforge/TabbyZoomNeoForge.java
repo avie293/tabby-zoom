@@ -9,13 +9,13 @@ import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 
 @Mod(value = "tabby_zoom", dist = Dist.CLIENT)
 public class TabbyZoomNeoForge {
-	public TabbyZoomNeoForge(IEventBus modBus, ModContainer container) {
-		// NeoForge mod ids can't contain "-", TabbyLib needs the id of the mod on this loader
-		TabbyZoomClient.init(container.getModId());
+    public TabbyZoomNeoForge(IEventBus modBus, ModContainer container) {
+        // NeoForge mod ids can't contain "-", TabbyLib needs the id of the mod on this loader
+        TabbyZoomClient.init(container.getModId());
 
-		modBus.addListener(RegisterKeyMappingsEvent.class, event -> {
-			event.registerCategory(TabbyZoomClient.CATEGORY);
-			TabbyZoomClient.KEYS.forEach(event::register);
-		});
-	}
+        modBus.addListener(RegisterKeyMappingsEvent.class, event -> {
+            event.registerCategory(TabbyZoomClient.CATEGORY);
+            TabbyZoomClient.KEYS.forEach(event::register);
+        });
+    }
 }

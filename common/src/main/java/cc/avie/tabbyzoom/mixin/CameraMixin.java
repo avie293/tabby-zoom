@@ -9,12 +9,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Camera.class)
 public class CameraMixin {
-	@Inject(method = "calculateFov", at = @At("RETURN"), cancellable = true)
-	private void tabbyZoom$applyZoom(float partialTick, CallbackInfoReturnable<Float> cir) {
-		ZoomController.update();
-		double zoom = ZoomController.getCurrentZoom();
-		if (zoom != 1.0) {
-			cir.setReturnValue((float) (cir.getReturnValueF() / zoom));
-		}
-	}
+    @Inject(method = "calculateFov", at = @At("RETURN"), cancellable = true)
+    private void tabbyZoom$applyZoom(float partialTick, CallbackInfoReturnable<Float> cir) {
+        ZoomController.update();
+        double zoom = ZoomController.getCurrentZoom();
+        if (zoom != 1.0) {
+            cir.setReturnValue((float) (cir.getReturnValueF() / zoom));
+        }
+    }
 }

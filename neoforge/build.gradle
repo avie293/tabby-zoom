@@ -1,24 +1,24 @@
 plugins {
-	id 'multiloader-loader'
-	id 'net.neoforged.moddev'
+    id 'multiloader-loader'
+    id 'net.neoforged.moddev'
 }
 
 neoForge {
-	version = neoforge_version
+    version = neoforge_version
 
-	runs {
-		client {
-			client()
-		}
-	}
+    runs {
+        client {
+            client()
+        }
+    }
 
-	mods {
-		"${neoforge_mod_id}" {
-			sourceSet sourceSets.main
-		}
-	}
+    mods {
+        "${neoforge_mod_id}" {
+            sourceSet sourceSets.main
+        }
+    }
 }
 
 dependencies {
-	implementation "cc.avie.tabbylib:tabbylib-neoforge:${tabbylib_version}"
+    implementation "cc.avie.tabbylib:tabbylib-neoforge:${tabbylib_version}"
 }
