@@ -9,7 +9,7 @@ version = "${version}"
 displayName = "${mod_name}"
 description = '''${mod_description}'''
 authors = "${mod_author}"
-logoFile = "assets/${mod_id}/icon.png"
+iconFile = "assets/${mod_id}/icon.png"
 displayURL = "${mod_homepage}"
 
 [[mixins]]
