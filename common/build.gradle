@@ -3,19 +3,23 @@ plugins {
     id 'net.neoforged.moddev'
 }
 
-// Vanilla Minecraft only, no loader: the loader specific code is in fabric and neoforge
 neoForge {
     neoFormVersion = neo_form_version
+
+    // Enables access transformers automatically when the file exists.
+    def at = file('src/main/resources/META-INF/accesstransformer.cfg')
+    if (at.exists()) {
+        accessTransformers.from(at.absolutePath)
+    }
 }
 
 dependencies {
-    // The API of TabbyLib without the loader specific parts
-    compileOnly "cc.avie.tabbylib:tabbylib-common:${tabbylib_version}"
-    compileOnly "net.fabricmc:sponge-mixin:${mixin_version}"
-    compileOnly "io.github.llamalad7:mixinextras-common:${mixinextras_version}"
+    // Both loaders bundle Fabric Mixin and MixinExtras, so compiling against them in common is safe.
+    compileOnly("net.fabricmc:sponge-mixin:${sponge_mixin_version}")
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:${mixinextras_version}"))
+    compileOnly("cc.avie.tabbylib:tabbylib-common:${tabbylib_version}")
 }
 
-// The loader projects compile these sources and resources into their jars
 configurations {
     commonJava {
         canBeResolved = false
@@ -30,4 +34,23 @@ configurations {
 artifacts {
     commonJava sourceSets.main.java.sourceDirectories.singleFile
     commonResources sourceSets.main.resources.sourceDirectories.singleFile
+}
+
+// Implements the mcgradleconventions loader attribute.
+def loaderAttribute = Attribute.of('io.github.mcgradleconventions.loader', String)
+['apiElements', 'runtimeElements', 'sourcesElements'].each { variant ->
+    configurations.named(variant) {
+        attributes {
+            attribute(loaderAttribute, 'common')
+        }
+    }
+}
+sourceSets.configureEach {
+    [it.compileClasspathConfigurationName, it.runtimeClasspathConfigurationName].each { variant ->
+        configurations.named(variant) {
+            attributes {
+                attribute(loaderAttribute, 'common')
+            }
+        }
+    }
 }

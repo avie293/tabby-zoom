@@ -1,5 +1,6 @@
-// The loader plugins are applied in the subprojects, the shared setup is in buildSrc
 plugins {
+    // https://maven.fabricmc.net/net/fabricmc/fabric-loom/net.fabricmc.fabric-loom.gradle.plugin/maven-metadata.xml
     id 'net.fabricmc.fabric-loom' version "${loom_version}" apply false
+    // https://projects.neoforged.net/neoforged/moddevgradle
     id 'net.neoforged.moddev' version "${moddev_version}" apply false
 }
