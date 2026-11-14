@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 2.0.0 - 2026-11-14
+
+|         | Fabric | NeoForge |
+|---------|--------|----------|
+| 26.3    | Yes    | Yes      |
+
 ### Added
 - Added NeoForge support
 - Added a Discord link to the Mod Menu entry
